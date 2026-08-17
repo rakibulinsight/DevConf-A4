@@ -1,4 +1,4 @@
-/* Comon Style */
+/* Restart Style start */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *,
@@ -9,6 +9,56 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
+
 body{
     font-family: "Inter", sans-serif;
+}
+/* Restart Style End */
+
+/* Comon Style Start*/
+
+.continar{
+    width: 100%;
+    max-width: 1320px;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.buttonC{
+    background-color: #1d4ed8;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+
+}
+/* Comon Style End*/
+
+.navBarConf{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.navLogo > a > img {
+    width: 110px;
+}
+
+.navList > ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #575757;
+}
+
+.navList > ul a {
+    list-style: none;
+    color: #575757;
+    text-decoration: none;
 }
