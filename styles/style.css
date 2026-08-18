@@ -173,3 +173,129 @@ body{
     font-size: 20px;
     padding: 6px 0;
 }
+
+/* Meet the Speakers Section Style Ends */
+
+.priceTitleSection {
+    text-align: center;
+    padding: 90px 0 30px 0px;
+}
+.priceTitleSection >p{
+    color: #575757;
+    padding: 15px 0;
+}
+.priceTitleSection > h1 {
+    /* text-align: center; */
+    color: #0d1b2a;
+    font-size: 40px;
+    /* padding: ; */
+}
+
+.priceingBoxCardPrants {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.childBoxP{
+    min-height: 241px;
+    width: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.childBoxP:nth-child(2){
+    background-color: #0d1b2a;
+}
+.childBoxP:nth-child(2) > .priceS{
+    border-color: #1c3043;
+}
+.childBoxP:nth-child(2) > .priceS > h1{
+    color: #fff;
+}
+
+.childBoxP:nth-child(2) > .priceS > span{
+    color: #93c5fd;
+}
+.childBoxP:nth-child(2) > .priceS > p {
+    color: #e5e5e5;
+}
+
+.childBoxP:nth-child(2) > .priceFetcherList li{
+    color: #cbd5e1;
+}
+
+.childBoxP:nth-child(2) > .buttonS > .pBoxCard{
+    color: #fff;
+    background-color: #2563eb;
+}
+
+.buttonS{
+    padding: 20px 0;
+}
+
+.priceS{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.priceS span{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #64748b;
+}
+
+.priceS h1{
+    margin: 0;
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #06192b;
+}
+
+.priceS p{
+    font-size: 13px;
+    margin: 3px 0 0;
+    color: #64748b;
+}
+
+.priceFetcherList{
+    flex: 1;
+    padding-top: 10px;
+}
+
+.priceFetcherList ul{
+    margin: 0;
+    padding-left: 9px;
+}
+
+.priceFetcherList li {
+    margin-bottom: 5px;
+    padding-left: 2px;
+    font-size: 14px;
+    line-height: 2;
+    color: #475569;
+}
+
+.priceFetcherList li::marker{
+    color:#2563eb;
+}
+
+.pBoxCard{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+}
