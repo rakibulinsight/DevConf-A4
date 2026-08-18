@@ -39,6 +39,7 @@ body{
 }
 /* Comon Style End*/
 
+/* Nav Bar Style Start */
 .navBarConf{
     display: flex;
     justify-content: space-between;
@@ -62,3 +63,67 @@ body{
     color: #575757;
     text-decoration: none;
 }
+    /* Nav Bar Style End */
+
+/* Hero Aria Style Start  */
+
+#heroBanar {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-image:
+        linear-gradient(
+                to top right,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0)
+        ),
+        url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heroAria{
+    text-align: center;
+    min-height: 650px;
+    position: relative;
+}
+
+.buttonDiv{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+
+.buttonDiv > button {
+    height: 70px;
+    width: 275px;
+    font-size: 20px;
+}
+
+.txtContent h1{
+    font-size: 60px;
+    padding-top: 90px;
+}
+.txtContent h1 > span{
+    font-style: italic;
+}
+
+.txtContent h1, p{
+    color: #fff;
+}
+.txtContent p{
+    /* color: #fff; */
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1.2;
+    padding: 25px 0;
+}
+
+/* Hero Aria End */
