@@ -178,11 +178,11 @@ body{
 
 .priceTitleSection {
     text-align: center;
-    padding: 90px 0 30px 0px;
+    padding: 90px 0 0 0;
 }
 .priceTitleSection >p{
     color: #575757;
-    padding: 15px 0;
+    padding-top: 15px;
 }
 .priceTitleSection > h1 {
     /* text-align: center; */
@@ -192,15 +192,16 @@ body{
 }
 
 .priceingBoxCardPrants {
-    display: grid;
+    display: flex;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 40px 0;
 }
 
 .childBoxP{
     min-height: 241px;
-    width: auto;
+    min-width: 350px;
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -230,6 +231,9 @@ body{
     color: #cbd5e1;
 }
 
+.childBoxP:nth-child(3){
+    background-color: #f8f9fb;
+}
 .childBoxP:nth-child(2) > .buttonS > .pBoxCard{
     color: #fff;
     background-color: #2563eb;
@@ -299,3 +303,82 @@ body{
     border: 2px solid #2563eb;
     border-radius: 6px;
 }
+
+/* FAQ Section Style Start */
+.faqSection{
+    padding-bottom: 100px;
+}
+
+.faqList{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.faqItem{
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.faqToggle{
+    display: none;
+}
+
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0d1b2a;
+    cursor: pointer;
+}
+
+.faqIcon{
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eef2ff;
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.faqAnswer{
+    max-height: 0;
+    padding: 0 25px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faqAnswer p{
+    color: #575757;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-bottom: 22px;
+}
+
+.faqToggle:checked ~ .faqAnswer{
+    max-height: 300px;
+}
+
+.faqToggle:checked ~ .faqQuestion .faqIcon{
+    transform: rotate(45deg);
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.faqItem:hover{
+    border-color: #cbd5e1;
+}
+/* FAQ Section Style Ends */
