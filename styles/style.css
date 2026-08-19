@@ -63,8 +63,14 @@ body{
     list-style: none;
     color: #575757;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
-    /* Nav Bar Style End */
+
+.navList > ul a:hover, .navList > ul a:focus-visible{
+    color: #2563eb;
+}
+
+/* Nav Bar Style End */
 
 /* Hero Aria Style Start  */
 
@@ -325,6 +331,7 @@ body{
 
 .faqToggle{
     display: none;
+    /* transition: color 0.2s ease; */
 }
 
 .faqQuestion{
@@ -370,6 +377,7 @@ body{
 
 .faqToggle:checked ~ .faqAnswer{
     max-height: 300px;
+    /* border-color: #2563eb; */
 }
 
 .faqToggle:checked ~ .faqQuestion .faqIcon{
@@ -382,3 +390,56 @@ body{
     border-color: #cbd5e1;
 }
 /* FAQ Section Style Ends */
+
+/* Footer Section Style Start */
+.footerPart{
+    background-color: #0d1b2a;
+}
+
+.logoAndIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #1c3043;
+    padding: 20px 0;
+}
+
+.copyRightMassage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #cbd5e1;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.policyList > ul > li > a{
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.policyList > ul > li > a:hover,
+.policyList > ul > li > a:focus-visible{
+    color: #2563eb;
+}
+
+.footerSocialMediaIcon{
+    display: flex;
+    gap: 16px;
+}
+.footerSocialMediaIcon > a{
+    color: #2563eb;
+    font-size: 20px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+.footerSocialMediaIcon > a:hover,
+.footerSocialMediaIcon > a:focus-visible{
+    opacity: 0.7;
+}
+
+
+/* Footer Section Style Ends */
